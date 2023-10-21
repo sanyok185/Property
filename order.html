@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>HomePage</title>
+	<title>Order</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -15,7 +15,7 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="header__container">
+			<div class="header__container order-header__container">
 				<a href="home.html" class="header__logo logo">
 					<img src="img/logo.svg" alt="">
 					<div class="logo__text">
@@ -259,41 +259,439 @@
 				</div>
 			</div>
 		</header>
-		<main class="page">
-			<section class="page__hero hero">
-				<div class="hero__container">
-					<div class="hero__content">
-						<picture><source srcset="img/home/hero.webp" type="image/webp"><img class="hero__image" src="img/home/hero.jpg" alt="Bg"></picture>
-						<h1 class="hero__title">
-							Agents. Tours. Loans. Homes.
-						</h1>
-						<form data-da=".hero__container, 768" action="#" class="hero__form form-hero">
-							<div class="form-hero__options options-hero">
-								<div class="options-hero__item">
-									<input id="o_1" class="options-hero__input" checked type="radio" value="1" name="option">
-									<label for="o_1" class="options-hero__label"><span class="options-hero__text">Rent</span></label>
+		<main class="page-order">
+			<section class="page-order__gallery gallery">
+				<div class="gallery__container">
+					<div data-da=".gallery__mobile, 767.98" data-popup="#gallery-popup" class="gallery__big-ibg gallery__image">
+						<picture><source srcset="img/order/gallery/01.webp" type="image/webp"><img src="img/order/gallery/01.jpg" alt="Image"></picture>
+						<button type="button" class="swiper-gallery__button button">Full screen</button>
+					</div>
+					<div class="gallery__slider swiper-gallery swiper">
+						<div class="swiper-gallery__wrapper swiper-wrapper">
+							<div class="swiper-gallery__slide swiper-slide">
+								<div data-popup="#gallery-popup" data-da=".gallery__mobile, 767.98" class="swiper-gallery__image-ibg gallery__image">
+									<picture><source srcset="img/order/gallery/01.webp" type="image/webp"><img src="img/order/gallery/01.jpg" alt="Image"></picture>
+									<button type="button" class="swiper-gallery__button button">Full screen</button>
 								</div>
-								<div class="options-hero__item">
-									<input id="o_2" class="options-hero__input" type="radio" value="2" name="option">
-									<label for="o_2" class="options-hero__label"><span class="options-hero__text">Buy</span></label>
+								<div data-popup="#gallery-popup" data-da=".gallery__mobile, 767.98" class="swiper-gallery__image-ibg gallery__image">
+									<picture><source srcset="img/order/gallery/02.webp" type="image/webp"><img src="img/order/gallery/02.jpg" alt="Image"></picture>
+									<button type="button" class="swiper-gallery__button button">Full screen</и>
 								</div>
 							</div>
-							<input autocomplete="off" type="text" name="Search" data-error="Error" placeholder="State, City or  ZIP code" class="form-hero__input input">
-							<a href="search.html" class="form-hero__button button">Search</a>
-						</form>
+							<div class="swiper-gallery__slide swiper-slide">
+								<div data-popup="#gallery-popup" data-da=".gallery__mobile, 767.98" class="swiper-gallery__image-ibg gallery__image">
+									<picture><source srcset="img/order/gallery/02.webp" type="image/webp"><img src="img/order/gallery/02.jpg" alt="Image"></picture>
+									<button type="button" class="swiper-gallery__button button">Full screen</button>
+								</div>
+								<div data-popup="#gallery-popup" data-da=".gallery__mobile, 767.98" class="swiper-gallery__image-ibg gallery__image">
+									<picture><source srcset="img/order/gallery/01.webp" type="image/webp"><img src="img/order/gallery/01.jpg" alt="Image"></picture>
+									<button type="button" class="swiper-gallery__button button">Full screen</и>
+								</div>
+							</div>
+							<div class="swiper-gallery__slide swiper-slide">
+								<div data-popup="#gallery-popup" data-da=".gallery__mobile, 767.98" class="swiper-gallery__image-ibg gallery__image">
+									<picture><source srcset="img/order/gallery/01.webp" type="image/webp"><img src="img/order/gallery/01.jpg" alt="Image"></picture>
+									<button type="button" class="swiper-gallery__button button">Full screen</button>
+								</div>
+								<div data-popup="#gallery-popup" data-da=".gallery__mobile, 767.98" class="swiper-gallery__image-ibg gallery__image">
+									<picture><source srcset="img/order/gallery/02.webp" type="image/webp"><img src="img/order/gallery/02.jpg" alt="Image"></picture>
+									<button type="button" class="swiper-gallery__button button">Full screen</и>
+								</div>
+							</div>
+							<div class="swiper-gallery__slide swiper-slide">
+								<div data-popup="#gallery-popup" data-da=".gallery__mobile, 767.98" class="swiper-gallery__image-ibg gallery__image">
+									<picture><source srcset="img/order/gallery/02.webp" type="image/webp"><img src="img/order/gallery/02.jpg" alt="Image"></picture>
+									<button type="button" class="swiper-gallery__button button">Full screen</button>
+								</div>
+								<div data-popup="#gallery-popup" data-da=".gallery__mobile, 767.98" class="swiper-gallery__image-ibg gallery__image">
+									<picture><source srcset="img/order/gallery/01.webp" type="image/webp"><img src="img/order/gallery/01.jpg" alt="Image"></picture>
+									<button type="button" class="swiper-gallery__button button">Full screen</и>
+								</div>
+							</div>
+							<div class="swiper-gallery__slide swiper-slide">
+								<div data-popup="#gallery-popup" data-da=".gallery__mobile, 767.98" class="swiper-gallery__image-ibg gallery__image">
+									<picture><source srcset="img/order/gallery/01.webp" type="image/webp"><img src="img/order/gallery/01.jpg" alt="Image"></picture>
+									<button type="button" class="swiper-gallery__button button">Full screen</button>
+								</div>
+								<div data-popup="#gallery-popup" data-da=".gallery__mobile, 767.98" class="swiper-gallery__image-ibg gallery__image">
+									<picture><source srcset="img/order/gallery/02.webp" type="image/webp"><img src="img/order/gallery/02.jpg" alt="Image"></picture>
+									<button type="button" class="swiper-gallery__button button">Full screen</и>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-scrollbar"></div>
+					</div>
+					<div class="gallery__mobile">
 					</div>
 				</div>
 			</section>
-			<section class="page__property property">
+			<section class="page-order__info info">
+				<div class="info__container">
+					<div class="info__header">
+						<h1 class="main-info__title">
+							1234 Palm Avenue, Town
+						</h1>
+						<div class="info__block">
+							<div class="info__price price">
+								<span>$1.320</span>/month
+							</div>
+							<button type="button" class="info__favourite">
+								<img src="img/icons/heart.svg" alt="Icon">
+							</button>
+						</div>
+					</div>
+					<div class="info__content">
+						<div class="info__main main-info">
+							<div class="main-info__head">
+								<div class="main-info__subtitle">
+									<div class="main-info__label">Chicago - Illionis, US 60622</div>
+									<div class="main-info__fee">
+										<img src="img/icons/cash.svg" alt="Icon">
+										<span>Fees: $250</span>
+									</div>
+								</div>
+								<div class="main-info__features features">
+									<div class="features__item">
+										<div class="features__icon">
+											<img src="img/icons/bed.svg" alt="Icon">
+										</div>
+										<div class="features__text">
+											3 bedroom
+										</div>
+									</div>
+									<div class="features__item">
+										<div class="features__icon">
+											<img src="img/icons/bath.svg" alt="Icon">
+										</div>
+										<div class="features__text">
+											2 bathroom
+										</div>
+									</div>
+									<div class="features__item">
+										<div class="features__icon">
+											<img src="img/icons/size.svg" alt="Icon">
+										</div>
+										<div class="features__text">
+											700 sqft
+										</div>
+									</div>
+									<div class="features__item">
+										<div class="features__icon">
+											<img src="img/icons/paw.svg" alt="Icon">
+										</div>
+										<div class="features__text">
+											Dog/Cat
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main-info__property property-info">
+								<h2 class="property-info__title">Property information</h2>
+								<div class="property-info__move">
+									<img src="img/icons/move-in.svg" alt="Icon">
+									<span>Move in: 2023-07-26</span>
+								</div>
+								<div class="property-info__items">
+									<div class="property-info__item item-info">
+										<div class="item-info__icon">
+											<img src="img/icons/parking.svg" alt="Icon">
+										</div>
+										<div class="item-info__body">
+											<h6 class="item-info__title">
+												Parking
+											</h6>
+											<ul class="item-info__list">
+												<li class="item-info__item">
+													Garage, Off Street
+												</li>
+												<li class="item-info__item">
+													Garage
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="property-info__item item-info">
+										<div class="item-info__icon">
+											<img src="img/icons/washing-machine.svg" alt="Icon">
+										</div>
+										<div class="item-info__body">
+											<h6 class="item-info__title">
+												Appliances
+											</h6>
+											<ul class="item-info__list">
+												<li class="item-info__item">
+													Dryer, Washer
+												</li>
+												<li class="item-info__item">
+													Laundry In Unit
+												</li>
+												<li class="item-info__item">
+													Dryer, Washer
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<h3 class="property-info__title property-info__title--small">Property information</h3>
+								<div class="property-info__items">
+									<div class="property-info__item item-info">
+										<div class="item-info__icon">
+											<img src="img/icons/parking.svg" alt="Icon">
+										</div>
+										<div class="item-info__body">
+											<h6 class="item-info__title">
+												Parking
+											</h6>
+											<ul class="item-info__list">
+												<li class="item-info__item">
+													Garage, Off Street
+												</li>
+												<li class="item-info__item">
+													Garage
+												</li>
+												<li class="item-info__item">
+													Garage, Off Street
+												</li>
+												<li class="item-info__item">
+													Garage
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="property-info__item item-info">
+										<div class="item-info__icon">
+											<img src="img/icons/washing-machine.svg" alt="Icon">
+										</div>
+										<div class="item-info__body">
+											<h6 class="item-info__title">
+												Appliances
+											</h6>
+											<ul class="item-info__list">
+												<li class="item-info__item">
+													Dryer, Washer
+												</li>
+												<li class="item-info__item">
+													Laundry In Unit
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="main-info__additional additional-info">
+								<div class="additional-info__title">
+									Additional Information
+								</div>
+								<div data-showmore data-showmore-media="767.98" class="additional-info__text">
+									<p data-showmore-content="160">
+										This tutorial will provide in-depth explanations on how to use Flutter for real-world application development. You will learn how to set up the development environment, create projects, write interfaces and logic, debug, test, and publish applications. By the end of this tutorial, you will master the development skills of Flutter and be able to use it for cross-platform mobile application development. This tutorial will provide in-depth explanations on how to use Flutter for real-world application development. You will learn how to set up the development This tutorial will provide in-depth explanations on how to use Flutter for real-world application development. You will learn how to set up the development environment, create projects, write interfaces and logic, debug, test, and publish applications. By the end of this tutorial, you will master the development skills of Flutter and be able to use it for cross-platform mobile application development. This tutorial will provide in-depth
+									</p>
+									<button hidden data-showmore-button type="button" class="additional-info__more block__more">
+										<span>Show more</span>
+										<span>Hide</span>
+									</button>
+								</div>
+							</div>
+							<div class="main-info__map-ibg">
+								<picture><source srcset="img/order/map.webp" type="image/webp"><img src="img/order/map.png" alt="Map"></picture>
+							</div>
+						</div>
+						<aside class="info__sidebar sidebar-info">
+							<div class="sidebar-info__top">
+								<div class="sidebar-info__labels labels">
+									<div class="labels__item">
+										For Rent
+									</div>
+									<div class="labels__item">
+										Apartment
+									</div>
+								</div>
+								<div class="sidebar-info__features features">
+									<div class="features__item">
+										<div class="features__icon">
+											<img src="img/icons/bed.svg" alt="Icon">
+										</div>
+										<div class="features__text">
+											3 bedroom
+										</div>
+									</div>
+									<div class="features__item">
+										<div class="features__icon">
+											<img src="img/icons/bath.svg" alt="Icon">
+										</div>
+										<div class="features__text">
+											2 bathroom
+										</div>
+									</div>
+									<div class="features__item">
+										<div class="features__icon">
+											<img src="img/icons/size.svg" alt="Icon">
+										</div>
+										<div class="features__text">
+											700 sqft
+										</div>
+									</div>
+									<div class="features__item">
+										<div class="features__icon">
+											<img src="img/icons/paw.svg" alt="Icon">
+										</div>
+										<div class="features__text">
+											Dog/Cat
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sidebar-info__person person-info">
+								<div class="person-info__avatar-ibg">
+									<picture><source srcset="img/home/realtors/01.webp" type="image/webp"><img src="img/home/realtors/01.jpg" alt="Avatar"></picture>
+								</div>
+								<div class="person-info__body">
+									<h5 class="person-info__name">
+										Arthur Grimes
+									</h5>
+									<div class="person-info__tel">
+										+44 74 885 623 24
+									</div>
+									<div class="person-info__position">
+										Realtor
+									</div>
+								</div>
+							</div>
+							<div class="sidebar-info__actions">
+								<a href="#" class="sidebar-info__button button">Schedule an appointment</a>
+								<a href="#" class="sidebar-info__button button button--white">Send a message</a>
+							</div>
+							<div class="sidebar-info__registration">
+								Registration from 05.23
+							</div>
+						</aside>
+					</div>
+				</div>
+			</section>
+			<section class="page-order__property property">
 				<div class="property__container">
 					<div class="property__section-header section-header">
 						<h2 class="section-header__title">
-							Looking for facts, figures or property advice?
+							Recent Views
 						</h2>
 						<div class="section-header__label">Rents continue to rise</div>
 					</div>
 					<div class="property__content">
 						<div class="property__items">
+							<a href="order.html" class="property__item item-property">
+								<div class="item-property__image-ibg">
+									<picture><source srcset="img/home/property/01.webp" type="image/webp"><img src="img/home/property/01.png" alt="Image"></picture>
+									<div class="item-property__labels labels">
+										<div class="labels__item">
+											For Rent
+										</div>
+										<div class="labels__item">
+											Apartment
+										</div>
+									</div>
+									<button type="button" class="item-property__favorite">
+										<img src="img/icons/heart.svg" alt="Icon">
+									</button>
+								</div>
+								<div class="item-property__content">
+									<div class="item-property__info">
+										<div class="item-property__main-info">
+											<h4 class="item-property__name">
+												19W Evergreen Ave
+											</h4>
+											<div class="item-property__address">
+												Chicago - Illionis, US 60622
+											</div>
+										</div>
+										<div class="item-property__price">
+											<span>$1.320</span>/mo
+										</div>
+									</div>
+									<div class="item-property__features features">
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/bed.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												3 bedroom
+											</div>
+										</div>
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/bath.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												2 bathroom
+											</div>
+										</div>
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/size.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												700 sqft
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="order.html" class="property__item item-property">
+								<div class="item-property__image-ibg">
+									<picture><source srcset="img/home/property/01.webp" type="image/webp"><img src="img/home/property/01.png" alt="Image"></picture>
+									<div class="item-property__labels labels">
+										<div class="labels__item">
+											For Rent
+										</div>
+										<div class="labels__item">
+											Apartment
+										</div>
+									</div>
+									<button type="button" class="item-property__favorite">
+										<img src="img/icons/heart.svg" alt="Icon">
+									</button>
+								</div>
+								<div class="item-property__content">
+									<div class="item-property__info">
+										<div class="item-property__main-info">
+											<h4 class="item-property__name">
+												19W Evergreen Ave
+											</h4>
+											<div class="item-property__address">
+												Chicago - Illionis, US 60622
+											</div>
+										</div>
+										<div class="item-property__price">
+											<span>$1.320</span>/mo
+										</div>
+									</div>
+									<div class="item-property__features features">
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/bed.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												3 bedroom
+											</div>
+										</div>
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/bath.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												2 bathroom
+											</div>
+										</div>
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/size.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												700 sqft
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
 							<a href="order.html" class="property__item item-property">
 								<div class="item-property__image-ibg">
 									<picture><source srcset="img/home/property/01.webp" type="image/webp"><img src="img/home/property/01.png" alt="Image"></picture>
@@ -641,282 +1039,474 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__realtors realtors">
-				<div class="realtors__container">
-					<h2 class="realtors__title">
-						Best Realtors
-					</h2>
-					<div class="realtors__items">
-						<div class="realtors__item item-realtor">
-							<div class="item-realtor__photo-ibg">
-								<picture><source srcset="img/home/realtors/01.webp" type="image/webp"><img src="img/home/realtors/01.jpg" alt="Photo"></picture>
-							</div>
-							<div class="item-realtor__name">
-								Arthur Grimes
-							</div>
-							<div class="item-realtor__label">
-								Apple
-							</div>
-							<div class="item-realtor__rating">
-								<img src="img/home/realtors/rating.svg" alt="Rating">
-							</div>
-						</div>
-						<div class="realtors__item item-realtor">
-							<div class="item-realtor__photo-ibg">
-								<picture><source srcset="img/home/realtors/02.webp" type="image/webp"><img src="img/home/realtors/02.jpg" alt="Photo"></picture>
-							</div>
-							<div class="item-realtor__name">
-								Alberta Spencer
-							</div>
-							<div class="item-realtor__label">
-								Pineapple
-							</div>
-							<div class="item-realtor__rating">
-								<img src="img/home/realtors/rating.svg" alt="Rating">
-							</div>
-						</div>
-						<div class="realtors__item item-realtor">
-							<div class="item-realtor__photo-ibg">
-								<picture><source srcset="img/home/realtors/03.webp" type="image/webp"><img src="img/home/realtors/03.jpg" alt="Photo"></picture>
-							</div>
-							<div class="item-realtor__name">
-								Arthur Grimes
-							</div>
-							<div class="item-realtor__label">
-								Apple
-							</div>
-							<div class="item-realtor__rating">
-								<img src="img/home/realtors/rating.svg" alt="Rating">
-							</div>
-						</div>
-						<div class="realtors__item item-realtor">
-							<div class="item-realtor__photo-ibg">
-								<picture><source srcset="img/home/realtors/04.webp" type="image/webp"><img src="img/home/realtors/04.jpg" alt="Photo"></picture>
-							</div>
-							<div class="item-realtor__name">
-								Bernadette McLaughlin
-							</div>
-							<div class="item-realtor__label">
-								Banana
-							</div>
-							<div class="item-realtor__rating">
-								<img src="img/home/realtors/rating.svg" alt="Rating">
-							</div>
-						</div>
-						<div class="realtors__item item-realtor">
-							<div class="item-realtor__photo-ibg">
-								<picture><source srcset="img/home/realtors/05.webp" type="image/webp"><img src="img/home/realtors/05.jpg" alt="Photo"></picture>
-							</div>
-							<div class="item-realtor__name">
-								Tasha West
-							</div>
-							<div class="item-realtor__label">
-								Orange
-							</div>
-							<div class="item-realtor__rating">
-								<img src="img/home/realtors/rating.svg" alt="Rating">
-							</div>
-						</div>
-						<div class="realtors__item item-realtor">
-							<div class="item-realtor__photo-ibg">
-								<picture><source srcset="img/home/realtors/06.webp" type="image/webp"><img src="img/home/realtors/06.jpg" alt="Photo"></picture>
-							</div>
-							<div class="item-realtor__name">
-								Rudolph Boehm
-							</div>
-							<div class="item-realtor__label">
-								Strawberry
-							</div>
-							<div class="item-realtor__rating">
-								<img src="img/home/realtors/rating.svg" alt="Rating">
-							</div>
-						</div>
-						<div class="realtors__item item-realtor">
-							<div class="item-realtor__photo-ibg">
-								<picture><source srcset="img/home/realtors/03.webp" type="image/webp"><img src="img/home/realtors/03.jpg" alt="Photo"></picture>
-							</div>
-							<div class="item-realtor__name">
-								Leo Ruecker
-							</div>
-							<div class="item-realtor__label">
-								Grape
-							</div>
-							<div class="item-realtor__rating">
-								<img src="img/home/realtors/rating.svg" alt="Rating">
-							</div>
-						</div>
+			<section class="page-order__property property">
+				<div class="property__container">
+					<div class="property__section-header section-header">
+						<h2 class="section-header__title">
+							Relevant Views
+						</h2>
+						<div class="section-header__label">Rents continue to rise</div>
 					</div>
-					<h2 class="realtors__title">
-						Best Realtors
-					</h2>
-					<div class="realtors__items">
-						<div class="realtors__item item-realtor">
-							<div class="item-realtor__photo-ibg">
-								<picture><source srcset="img/home/realtors/08.webp" type="image/webp"><img src="img/home/realtors/08.jpg" alt="Photo"></picture>
-							</div>
-							<div class="item-realtor__name">
-								Arthur Grimes
-							</div>
-							<div class="item-realtor__label">
-								Apple
-							</div>
-							<div class="item-realtor__rating">
-								<img src="img/home/realtors/rating.svg" alt="Rating">
-							</div>
+					<div class="property__content">
+						<div class="property__items">
+							<a href="order.html" class="property__item item-property">
+								<div class="item-property__image-ibg">
+									<picture><source srcset="img/home/property/01.webp" type="image/webp"><img src="img/home/property/01.png" alt="Image"></picture>
+									<div class="item-property__labels labels">
+										<div class="labels__item">
+											For Rent
+										</div>
+										<div class="labels__item">
+											Apartment
+										</div>
+									</div>
+									<button type="button" class="item-property__favorite">
+										<img src="img/icons/heart.svg" alt="Icon">
+									</button>
+								</div>
+								<div class="item-property__content">
+									<div class="item-property__info">
+										<div class="item-property__main-info">
+											<h4 class="item-property__name">
+												19W Evergreen Ave
+											</h4>
+											<div class="item-property__address">
+												Chicago - Illionis, US 60622
+											</div>
+										</div>
+										<div class="item-property__price">
+											<span>$1.320</span>/mo
+										</div>
+									</div>
+									<div class="item-property__features features">
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/bed.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												3 bedroom
+											</div>
+										</div>
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/bath.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												2 bathroom
+											</div>
+										</div>
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/size.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												700 sqft
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="order.html" class="property__item item-property">
+								<div class="item-property__image-ibg">
+									<picture><source srcset="img/home/property/01.webp" type="image/webp"><img src="img/home/property/01.png" alt="Image"></picture>
+									<div class="item-property__labels labels">
+										<div class="labels__item">
+											For Rent
+										</div>
+										<div class="labels__item">
+											Apartment
+										</div>
+									</div>
+									<button type="button" class="item-property__favorite">
+										<img src="img/icons/heart.svg" alt="Icon">
+									</button>
+								</div>
+								<div class="item-property__content">
+									<div class="item-property__info">
+										<div class="item-property__main-info">
+											<h4 class="item-property__name">
+												19W Evergreen Ave
+											</h4>
+											<div class="item-property__address">
+												Chicago - Illionis, US 60622
+											</div>
+										</div>
+										<div class="item-property__price">
+											<span>$1.320</span>/mo
+										</div>
+									</div>
+									<div class="item-property__features features">
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/bed.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												3 bedroom
+											</div>
+										</div>
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/bath.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												2 bathroom
+											</div>
+										</div>
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/size.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												700 sqft
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="order.html" class="property__item item-property">
+								<div class="item-property__image-ibg">
+									<picture><source srcset="img/home/property/01.webp" type="image/webp"><img src="img/home/property/01.png" alt="Image"></picture>
+									<div class="item-property__labels labels">
+										<div class="labels__item">
+											For Rent
+										</div>
+										<div class="labels__item">
+											Apartment
+										</div>
+									</div>
+									<button type="button" class="item-property__favorite">
+										<img src="img/icons/heart.svg" alt="Icon">
+									</button>
+								</div>
+								<div class="item-property__content">
+									<div class="item-property__info">
+										<div class="item-property__main-info">
+											<h4 class="item-property__name">
+												19W Evergreen Ave
+											</h4>
+											<div class="item-property__address">
+												Chicago - Illionis, US 60622
+											</div>
+										</div>
+										<div class="item-property__price">
+											<span>$1.320</span>/mo
+										</div>
+									</div>
+									<div class="item-property__features features">
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/bed.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												3 bedroom
+											</div>
+										</div>
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/bath.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												2 bathroom
+											</div>
+										</div>
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/size.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												700 sqft
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="order.html" class="property__item item-property">
+								<div class="item-property__image-ibg">
+									<picture><source srcset="img/home/property/01.webp" type="image/webp"><img src="img/home/property/01.png" alt="Image"></picture>
+									<div class="item-property__labels labels">
+										<div class="labels__item">
+											For Rent
+										</div>
+										<div class="labels__item">
+											Apartment
+										</div>
+									</div>
+									<button type="button" class="item-property__favorite">
+										<img src="img/icons/heart.svg" alt="Icon">
+									</button>
+								</div>
+								<div class="item-property__content">
+									<div class="item-property__info">
+										<div class="item-property__main-info">
+											<h4 class="item-property__name">
+												19W Evergreen Ave
+											</h4>
+											<div class="item-property__address">
+												Chicago - Illionis, US 60622
+											</div>
+										</div>
+										<div class="item-property__price">
+											<span>$1.320</span>/mo
+										</div>
+									</div>
+									<div class="item-property__features features">
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/bed.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												3 bedroom
+											</div>
+										</div>
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/bath.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												2 bathroom
+											</div>
+										</div>
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/size.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												700 sqft
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="order.html" class="property__item item-property">
+								<div class="item-property__image-ibg">
+									<picture><source srcset="img/home/property/01.webp" type="image/webp"><img src="img/home/property/01.png" alt="Image"></picture>
+									<div class="item-property__labels labels">
+										<div class="labels__item">
+											For Rent
+										</div>
+										<div class="labels__item">
+											Apartment
+										</div>
+									</div>
+									<button type="button" class="item-property__favorite">
+										<img src="img/icons/heart.svg" alt="Icon">
+									</button>
+								</div>
+								<div class="item-property__content">
+									<div class="item-property__info">
+										<div class="item-property__main-info">
+											<h4 class="item-property__name">
+												19W Evergreen Ave
+											</h4>
+											<div class="item-property__address">
+												Chicago - Illionis, US 60622
+											</div>
+										</div>
+										<div class="item-property__price">
+											<span>$1.320</span>/mo
+										</div>
+									</div>
+									<div class="item-property__features features">
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/bed.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												3 bedroom
+											</div>
+										</div>
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/bath.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												2 bathroom
+											</div>
+										</div>
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/size.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												700 sqft
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="order.html" class="property__item item-property">
+								<div class="item-property__image-ibg">
+									<picture><source srcset="img/home/property/01.webp" type="image/webp"><img src="img/home/property/01.png" alt="Image"></picture>
+									<div class="item-property__labels labels">
+										<div class="labels__item">
+											For Rent
+										</div>
+										<div class="labels__item">
+											Apartment
+										</div>
+									</div>
+									<button type="button" class="item-property__favorite">
+										<img src="img/icons/heart.svg" alt="Icon">
+									</button>
+								</div>
+								<div class="item-property__content">
+									<div class="item-property__info">
+										<div class="item-property__main-info">
+											<h4 class="item-property__name">
+												19W Evergreen Ave
+											</h4>
+											<div class="item-property__address">
+												Chicago - Illionis, US 60622
+											</div>
+										</div>
+										<div class="item-property__price price">
+											<span>$1.320</span>/mo
+										</div>
+									</div>
+									<div class="item-property__features features">
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/bed.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												3 bedroom
+											</div>
+										</div>
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/bath.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												2 bathroom
+											</div>
+										</div>
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/size.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												700 sqft
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="order.html" class="property__item item-property">
+								<div class="item-property__image-ibg">
+									<picture><source srcset="img/home/property/01.webp" type="image/webp"><img src="img/home/property/01.png" alt="Image"></picture>
+									<div class="item-property__labels labels">
+										<div class="labels__item">
+											For Rent
+										</div>
+										<div class="labels__item">
+											Apartment
+										</div>
+									</div>
+									<button type="button" class="item-property__favorite">
+										<img src="img/icons/heart.svg" alt="Icon">
+									</button>
+								</div>
+								<div class="item-property__content">
+									<div class="item-property__info">
+										<div class="item-property__main-info">
+											<h4 class="item-property__name">
+												19W Evergreen Ave
+											</h4>
+											<div class="item-property__address">
+												Chicago - Illionis, US 60622
+											</div>
+										</div>
+										<div class="item-property__price">
+											<span>$1.320</span>/mo
+										</div>
+									</div>
+									<div class="item-property__features features">
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/bed.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												3 bedroom
+											</div>
+										</div>
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/bath.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												2 bathroom
+											</div>
+										</div>
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/size.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												700 sqft
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="order.html" class="property__item item-property">
+								<div class="item-property__image-ibg">
+									<picture><source srcset="img/home/property/01.webp" type="image/webp"><img src="img/home/property/01.png" alt="Image"></picture>
+									<div class="item-property__labels labels">
+										<div class="labels__item">
+											For Rent
+										</div>
+										<div class="labels__item">
+											Apartment
+										</div>
+									</div>
+									<button type="button" class="item-property__favorite">
+										<img src="img/icons/heart.svg" alt="Icon">
+									</button>
+								</div>
+								<div class="item-property__content">
+									<div class="item-property__info">
+										<div class="item-property__main-info">
+											<h4 class="item-property__name">
+												19W Evergreen Ave
+											</h4>
+											<div class="item-property__address">
+												Chicago - Illionis, US 60622
+											</div>
+										</div>
+										<div class="item-property__price">
+											<span>$1.320</span>/mo
+										</div>
+									</div>
+									<div class="item-property__features features">
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/bed.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												3 bedroom
+											</div>
+										</div>
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/bath.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												2 bathroom
+											</div>
+										</div>
+										<div class="features__item">
+											<div class="features__icon">
+												<img src="img/icons/size.svg" alt="Icon">
+											</div>
+											<div class="features__text">
+												700 sqft
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
 						</div>
-						<div class="realtors__item item-realtor">
-							<div class="item-realtor__photo-ibg">
-								<picture><source srcset="img/home/realtors/09.webp" type="image/webp"><img src="img/home/realtors/09.jpg" alt="Photo"></picture>
-							</div>
-							<div class="item-realtor__name">
-								Bernad McLaug
-							</div>
-							<div class="item-realtor__label">
-								Blueberry
-							</div>
-							<div class="item-realtor__rating">
-								<img src="img/home/realtors/rating.svg" alt="Rating">
-							</div>
-						</div>
-						<div class="realtors__item item-realtor">
-							<div class="item-realtor__photo-ibg">
-								<picture><source srcset="img/home/realtors/10.webp" type="image/webp"><img src="img/home/realtors/10.jpg" alt="Photo"></picture>
-							</div>
-							<div class="item-realtor__name">
-								Tasha West
-							</div>
-							<div class="item-realtor__label">
-								Lily
-							</div>
-							<div class="item-realtor__rating">
-								<img src="img/home/realtors/rating.svg" alt="Rating">
-							</div>
-						</div>
-						<div class="realtors__item item-realtor">
-							<div class="item-realtor__photo-ibg">
-								<picture><source srcset="img/home/realtors/11.webp" type="image/webp"><img src="img/home/realtors/11.jpg" alt="Photo"></picture>
-							</div>
-							<div class="item-realtor__name">
-								Arthur Grimes
-							</div>
-							<div class="item-realtor__label">
-								Apple
-							</div>
-							<div class="item-realtor__rating">
-								<img src="img/home/realtors/rating.svg" alt="Rating">
-							</div>
-						</div>
-						<div class="realtors__item item-realtor">
-							<div class="item-realtor__photo-ibg">
-								<picture><source srcset="img/home/realtors/12.webp" type="image/webp"><img src="img/home/realtors/12.jpg" alt="Photo"></picture>
-							</div>
-							<div class="item-realtor__name">
-								Leo Ruecker
-							</div>
-							<div class="item-realtor__label">
-								Lemon
-							</div>
-							<div class="item-realtor__rating">
-								<img src="img/home/realtors/rating.svg" alt="Rating">
-							</div>
-						</div>
-						<div class="realtors__item item-realtor">
-							<div class="item-realtor__photo-ibg">
-								<picture><source srcset="img/home/realtors/13.webp" type="image/webp"><img src="img/home/realtors/13.jpg" alt="Photo"></picture>
-							</div>
-							<div class="item-realtor__name">
-								Rudolph Boehm
-							</div>
-							<div class="item-realtor__label">
-								Rose
-							</div>
-							<div class="item-realtor__rating">
-								<img src="img/home/realtors/rating.svg" alt="Rating">
-							</div>
-						</div>
-						<div class="realtors__item item-realtor">
-							<div class="item-realtor__photo-ibg">
-								<picture><source srcset="img/home/realtors/10.webp" type="image/webp"><img src="img/home/realtors/10.jpg" alt="Photo"></picture>
-							</div>
-							<div class="item-realtor__name">
-								Alberta Spencer
-							</div>
-							<div class="item-realtor__label">
-								Cherry
-							</div>
-							<div class="item-realtor__rating">
-								<img src="img/home/realtors/rating.svg" alt="Rating">
-							</div>
-						</div>
-					</div>
-					<a href="#" class="realtors__button button">See more</a>
-				</div>
-			</section>
-			<section class="page__articles articles">
-				<div class="articles__container">
-					<div class="articles__row">
-						<div class="articles__image-ibg">
-							<picture><source srcset="img/home/articles/03.webp" type="image/webp"><img src="img/home/articles/03.jpg" alt="Image"></picture>
-						</div>
-						<article class="articles__content">
-							<div class="articles__label">
-								<img src="img/home/articles/label.svg" alt="Label">
-							</div>
-							<div class="articles__text">
-								<p>This guide introduces the basic concepts and usage of Vue.js, as well as some advanced features. It is hoped that readers can quickly get started with Vue.js and develop high-quality user interfaces using Vue.js in real projects.</p>
-							</div>
-							<div class="articles__label">
-								<img src="img/home/articles/label.svg" alt="Label">
-							</div>
-						</article>
-					</div>
-					<div class="articles__row">
-						<article class="articles__content">
-							<div class="articles__label">
-								<img src="img/home/articles/label.svg" alt="Label">
-							</div>
-							<div class="articles__text">
-								<p>This article introduces the methods of applying React in real-world projects. It mainly covers how to install the environment, create project structure, develop and debug, use components, lifecycle methods, Hooks, JSX syntax, and implement routing functionality using React Router.</p>
-							</div>
-							<div class="articles__label">
-								<img src="img/home/articles/label.svg" alt="Label">
-							</div>
-						</article>
-						<div class="articles__image-ibg">
-							<picture><source srcset="img/home/articles/04.webp" type="image/webp"><img src="img/home/articles/04.jpg" alt="Image"></picture>
-						</div>
-					</div>
-					<div class="articles__row">
-						<div class="articles__image-ibg">
-							<picture><source srcset="img/home/articles/05.webp" type="image/webp"><img src="img/home/articles/05.jpg" alt="Image"></picture>
-						</div>
-						<article class="articles__content">
-							<div class="articles__label">
-								<img src="img/home/articles/label.svg" alt="Label">
-							</div>
-							<div class="articles__text">
-								<p>This article covers Docker container practices, including the steps for creating and managing containers, as well as Docker's container orchestration capabilities. Using Docker, advanced developers can deploy and manage applications in a more flexible, repeatable, and scalable manner.</p>
-							</div>
-							<div class="articles__label">
-								<img src="img/home/articles/label.svg" alt="Label">
-							</div>
-						</article>
-					</div>
-					<div class="articles__row">
-						<article class="articles__content">
-							<div class="articles__label">
-								<img src="img/home/articles/label.svg" alt="Label">
-							</div>
-							<div class="articles__text">
-								<p>This article introduces how to get started with Java Web development, including basic Java knowledge, web development fundamentals, Java Web development frameworks and technologies, Java EE platform, and database knowledge. It is recommended to deepen understanding and mastery of Java Web development through practical projects.</p>
-							</div>
-							<div class="articles__label">
-								<img src="img/home/articles/label.svg" alt="Label">
-							</div>
-						</article>
-						<div class="articles__image-ibg">
-							<picture><source srcset="img/home/articles/06.webp" type="image/webp"><img src="img/home/articles/06.jpg" alt="Image"></picture>
-						</div>
+						<a href="#" class="property__button button">See more</a>
 					</div>
 				</div>
 			</section>
