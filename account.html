@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231021173906">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231023231601">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -251,15 +251,36 @@
 					</nav>
 				</div>
 				<div class="header__actions">
-					<a href="#" data-da=".menu__body, 767, 0" class="header__user user-header">
+					<button type="button" data-da=".menu__body, 767.98, 0" class="header__user user-header">
 						<div class="user-header__avatar-ibg">
 							<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar"></picture>
 						</div>
 						<div class="user-header__name">
 							Fahid Ramikshi
 						</div>
-					</a>
-					<a href="" class="header__button button button--add _icon-plus">Add Property</a>
+						<div class="user-header__sub-menu">
+							<div class="user-header__links">
+								<a href="#" class="user-header__link">
+									<img src="img/icons/settings.svg" alt="Icon">
+									<span>Account</span>
+								</a>
+								<a href="#" class="user-header__link">
+									<img src="img/icons/settings.svg" alt="Icon">
+									<span>Watch list</span>
+								</a>
+								<a href="#" class="user-header__link">
+									<img src="img/icons/settings.svg" alt="Icon">
+									<span>My Team</span>
+								</a>
+								<a href="#" class="user-header__link">
+									<img src="img/icons/settings.svg" alt="Icon">
+									<span>Settings</span>
+								</a>
+							</div>
+							<a href="home.html" class="user-header__button button">Log out</a>
+						</div>
+					</button>
+					<a href="" class="header__button button button--add _icon-plus"><span>Add Property</span></a>
 					<button type="button" class="header__button button-header">
 						<div class="menu__icon icon-menu"><span></span></div>
 					</button>
@@ -1373,11 +1394,11 @@
 							</div>
 							<button type="submit" class="popup-log__button button">Register</button>
 							<div class="checkbox-register">
-								<input id="c_1" data-error="Error" class="checkbox-register__input" type="checkbox" value="1" name="Registration">
-								<label for="c_1" class="checkbox-register__label"><span class="checkbox-register__text">I accept the rules and policies of this site</span></label>
+								<input id="r_1" data-error="Error" class="checkbox-register__input" type="checkbox" value="1" name="Registration">
+								<label for="r_1" class="checkbox-register__label"><span class="checkbox-register__text">I accept the rules and policies of this site</span></label>
 
-								<input id="c_2" data-error="Error" class="checkbox-register__input" type="checkbox" value="2" name="Registration">
-								<label for="c_2" class="checkbox-register__label">
+								<input id="r_2" data-error="Error" class="checkbox-register__input" type="checkbox" value="2" name="Registration">
+								<label for="r_2" class="checkbox-register__label">
 									<span class="checkbox-register__text">I'm a realtor</span>
 									<button type="button" class="checkbox-register__button">
 										<img src="img/icons/question.svg" alt="Icon">
@@ -1390,7 +1411,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20231021173906"></script>
+	<script src="js/app.min.js?_v=20231023231601"></script>
 </body>
 
 </html>

@@ -6650,16 +6650,18 @@
         if (targetElement.closest(".user-header") && !targetElement.closest(".user-header__sub-menu")) {
             const userMenu = document.querySelector(".user-header__sub-menu");
             const userButton = document.querySelector(".user-header");
+            const header = document.querySelector("header");
             userMenu.classList.toggle("active");
             userButton.classList.toggle("active");
-            bodyLockToggle();
+            header.classList.toggle("dark");
+            if (window.innerWidth > 768) bodyLockToggle();
         }
         if (!targetElement.closest(".user-header") && !targetElement.closest(".user-header__sub-menu")) {
             const userMenu = document.querySelector(".user-header__sub-menu");
             const userButton = document.querySelector(".user-header");
             userMenu.classList.remove("active");
             userButton.classList.remove("active");
-            document.documentElement.classList.remove("lock");
+            if (window.innerWidth > 768) bodyUnlock();
         }
     }));
     if (document.querySelector(".mobile-footer__profile")) {
@@ -6681,7 +6683,7 @@
             const target = e.target;
             document.querySelectorAll(".item-filter__button");
             const filterBodies = document.querySelectorAll(".item-filter__body");
-            if (!target.closest(".item-filter__button")) for (let body of filterBodies) {
+            if (!target.closest(".item-filter__button") && !target.closest(".item-filter__body")) for (let body of filterBodies) {
                 body.classList.remove("_open");
                 body.previousElementSibling.classList.remove("_open");
             }
