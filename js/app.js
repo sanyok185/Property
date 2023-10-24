@@ -111,11 +111,12 @@
         if (target.hidden) return _slideDown(target, duration); else return _slideUp(target, duration);
     };
     let bodyLockStatus = true;
-    let bodyLockToggle = (delay = 500) => {
+    let bodyLockToggle = (delay = 0) => {
         if (document.documentElement.classList.contains("lock")) bodyUnlock(delay); else bodyLock(delay);
     };
-    let bodyUnlock = (delay = 500) => {
+    let bodyUnlock = (delay = 0) => {
         let body = document.querySelector("body");
+        let header = document.querySelector("header");
         if (bodyLockStatus) {
             let lock_padding = document.querySelectorAll("[data-lp]");
             setTimeout((() => {
@@ -124,6 +125,7 @@
                     el.style.paddingRight = "0px";
                 }
                 body.style.paddingRight = "0px";
+                header.style.paddingRight = "0px";
                 document.documentElement.classList.remove("lock");
             }), delay);
             bodyLockStatus = false;
@@ -132,8 +134,9 @@
             }), delay);
         }
     };
-    let bodyLock = (delay = 500) => {
+    let bodyLock = (delay = 0) => {
         let body = document.querySelector("body");
+        let header = document.querySelector("header");
         if (bodyLockStatus) {
             let lock_padding = document.querySelectorAll("[data-lp]");
             for (let index = 0; index < lock_padding.length; index++) {
@@ -141,6 +144,7 @@
                 el.style.paddingRight = window.innerWidth - document.querySelector(".wrapper").offsetWidth + "px";
             }
             body.style.paddingRight = window.innerWidth - document.querySelector(".wrapper").offsetWidth + "px";
+            header.style.paddingRight = (window.innerWidth - document.querySelector(".wrapper").offsetWidth) / 2 + "px";
             document.documentElement.classList.add("lock");
             bodyLockStatus = false;
             setTimeout((function() {
@@ -6631,7 +6635,7 @@
     }));
     function documentActions(e) {
         const targetElement = e.target;
-        if (window.innerWidth > 768 && isMobile.any()) {
+        if (window.innerWidth > 767.98 && isMobile.any()) {
             if (targetElement.closest(".menu__item")) {
                 const itemsHover = document.querySelectorAll(".menu__item._hover");
                 if (targetElement.closest(".menu__item")) {
@@ -6654,18 +6658,19 @@
             userMenu.classList.toggle("active");
             userButton.classList.toggle("active");
             header.classList.toggle("dark");
-            if (window.innerWidth > 768) bodyLockToggle();
+            if (window.innerWidth > 767.98) bodyLockToggle();
         }
         if (!targetElement.closest(".user-header") && !targetElement.closest(".user-header__sub-menu")) {
             const userMenu = document.querySelector(".user-header__sub-menu");
             const userButton = document.querySelector(".user-header");
+            const header = document.querySelector("header");
             userMenu.classList.remove("active");
             userButton.classList.remove("active");
-            if (window.innerWidth > 768) bodyUnlock();
+            header.classList.remove("dark");
+            if (window.innerWidth > 767.98) bodyUnlock();
         }
     }));
     if (document.querySelector(".mobile-footer__profile")) {
-        document.querySelector(".mobile-footer__profile");
         const footerSubMenu = document.querySelector(".mobile-footer__sub-menu");
         document.addEventListener("click", (e => {
             const targetElement = e.target;
@@ -6681,7 +6686,6 @@
         }));
         document.addEventListener("click", (e => {
             const target = e.target;
-            document.querySelectorAll(".item-filter__button");
             const filterBodies = document.querySelectorAll(".item-filter__body");
             if (!target.closest(".item-filter__button") && !target.closest(".item-filter__body")) for (let body of filterBodies) {
                 body.classList.remove("_open");
@@ -6696,7 +6700,7 @@
             button.addEventListener("click", (() => {
                 accountLink.classList.toggle("active");
                 const accountLinks = document.querySelectorAll(".tabs-account__links");
-                for (let link of accountLinks) if (link !== accountLink) link.classList.remove("active");
+                if (accountLinks.length > 0) for (let link of accountLinks) if (link !== accountLink) link.classList.remove("active");
             }));
             document.addEventListener("click", (e => {
                 const targetElement = e.target;
