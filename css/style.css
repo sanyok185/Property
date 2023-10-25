@@ -3751,10 +3751,6 @@ body::before {
     margin-bottom: 0.75rem;
   }
 
-  .filter__close {
-    display: none;
-  }
-
   .item-filter__button._open {
     border: 1px solid rgba(33, 33, 33, 0.2);
     background: #f1f1f1;
@@ -3827,6 +3823,10 @@ body::before {
     width: 100%;
     top: 3.9375rem;
     left: 0;
+  }
+
+  .filter__close {
+    display: none;
   }
 }
 
@@ -4116,6 +4116,10 @@ body::before {
 
   .filter._show {
     right: 0;
+  }
+
+  .filter__container {
+    padding-top: 3.9375rem;
   }
 
   .filter__items {
@@ -4596,10 +4600,6 @@ body::before {
 
   .sidebar-info__top {
     display: none;
-  }
-
-  .filter__container {
-    padding-top: 3.9375rem;
   }
 
   .item-filter__button._spoller-active {
