@@ -6633,9 +6633,25 @@
     window.addEventListener("load", (() => {
         document.addEventListener("click", documentActions);
     }));
+    window.addEventListener("load", (() => {
+        document.addEventListener("mouseover", documentActionsHover);
+    }));
     function documentActions(e) {
         const targetElement = e.target;
         if (window.innerWidth > 767.98 && isMobile.any()) {
+            if (targetElement.closest(".menu__item")) if (targetElement.closest(".menu__item._hover") && !targetElement.closest(".sub-menu")) document.querySelectorAll(".menu__item").forEach((item => item.classList.remove("_hover"))); else if (targetElement.closest(".menu__item")) {
+                document.querySelectorAll(".menu__item._hover").forEach((item => item.classList.remove("_hover")));
+                targetElement.closest(".menu__item").classList.add("_hover");
+            } else if (!targetElement.closest(".menu__item") && !targetElement.closest(".sub-menu")) targetElement.closest(".menu__item").classList.remove("_hover");
+            if (!targetElement.closest(".menu__item")) {
+                const items = document.querySelectorAll(".menu__item");
+                items.forEach((item => item.classList.remove("_hover")));
+            }
+        }
+    }
+    function documentActionsHover(e) {
+        const targetElement = e.target;
+        if (window.innerWidth > 767.98 && !isMobile.any()) {
             if (targetElement.closest(".menu__item")) if (targetElement.closest(".menu__item._hover") && !targetElement.closest(".sub-menu")) document.querySelectorAll(".menu__item").forEach((item => item.classList.remove("_hover"))); else if (targetElement.closest(".menu__item")) {
                 document.querySelectorAll(".menu__item._hover").forEach((item => item.classList.remove("_hover")));
                 targetElement.closest(".menu__item").classList.add("_hover");
