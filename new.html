@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231026110416">
+	<link rel="stylesheet" href="css/style.css">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -321,22 +321,25 @@
 					<h3 class="details__title">
 						Additional details
 					</h3>
-					<div class="details__choose">
+					<div data-one-select class="details__choose">
 						<div class="details__item item-details">
 							<div class="item-details__label">
 								Laundry
 							</div>
-							<select name="type" data-class-modif="form" class="item-details__select select">
-								<option value="1" selected>Laundry</option>
-								<option value="2">Laundry</option>
-								<option value="3">Laundry</option>
+							<select data-search data-scroll name="States" class="item-details__select select">
+								<option value="Kansas">Kansas</option>
+								<option value="Alaska">Alaska</option>
+								<option value="California">California</option>
+								<option value="Florida">Florida</option>
+								<option value="Montana">Montana</option>
+								<option value="Texas">Texas</option>
 							</select>
 						</div>
 						<div class="details__item item-details">
 							<div class="item-details__label">
 								Parking / Garage
 							</div>
-							<select name="type" data-class-modif="form" class="item-details__select select">
+							<select data-search name="Parking" class="item-details__select select">
 								<option value="1" selected>Parking</option>
 								<option value="2">Garage</option>
 								<option value="3">Parking</option>
@@ -693,7 +696,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20231026110416"></script>
+	<script src="js/app.js"></script>
 </body>
 
 </html>
